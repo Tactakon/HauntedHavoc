@@ -344,7 +344,7 @@ game.scene.add('collision', {
         //player.anims.play('player-idle-down');
 
         this.cameras.main.startFollow(player,true);
-        this.cameras.main.setZoom(1);
+        this.cameras.main.setZoom(2);
 
         
 
