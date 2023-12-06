@@ -99,9 +99,9 @@ game.scene.add('collision', {
         */
 
         //UI        
-        heart1UI = this.physics.add.sprite(300, 300, 'heartfull');
-        heart2UI = this.physics.add.sprite(316, 300, 'heartfull');
-        heart3UI = this.physics.add.sprite(332, 300, 'heartfull'); 
+        heart1UI = this.physics.add.sprite(250, 250, 'heartfull');
+        heart2UI = this.physics.add.sprite(266, 250, 'heartfull');
+        heart3UI = this.physics.add.sprite(282, 250, 'heartfull');
         heart1UI.setScrollFactor(0);
         heart2UI.setScrollFactor(0);
         heart3UI.setScrollFactor(0);
