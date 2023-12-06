@@ -19,8 +19,8 @@ function updateDistanceThreshold() {
 
 var config = {
     type: Phaser.AUTO,
-    width: 1000,
-    height: 1000,
+    width: 800,
+    height: 800,
     canvas: document.getElementById('canvas'),
     backgroundColor: 0xFFFFFF,
     //scene: [gameUI],
@@ -106,11 +106,11 @@ game.scene.add('collision', {
         heart2UI.setScrollFactor(0);
         heart3UI.setScrollFactor(0);
         
-        key1UI = this.physics.add.sprite(720, 300);
-        key2UI = this.physics.add.sprite(688, 300);
-        key3UI = this.physics.add.sprite(656, 300);
-        key4UI = this.physics.add.sprite(624, 300);
-        key5UI = this.physics.add.sprite(592, 300);
+        key1UI = this.physics.add.sprite(570, 250);
+        key2UI = this.physics.add.sprite(540, 250);
+        key3UI = this.physics.add.sprite(510, 250);
+        key4UI = this.physics.add.sprite(480, 250);
+        key5UI = this.physics.add.sprite(450, 250); 
         
         key1UI.setScrollFactor(0);
         key2UI.setScrollFactor(0);
