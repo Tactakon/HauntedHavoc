@@ -1,152 +1,210 @@
-# ansi-styles [![Build Status](https://travis-ci.org/chalk/ansi-styles.svg?branch=master)](https://travis-ci.org/chalk/ansi-styles)
+# **<div style="text-align: center;">Haunted-Havoc**</div>
+---
+## *Team*
+    - Jacquelyn Anderson
+    - Derrick Hood
+    - Thanya Rodriguez
+    - Calvin Wong
+    - Ashley Yu
+## *Story*
+    The protagonist wakes up in a pyramid with no memory of their past nor who they are, only an amulet with the Eye of Horus and a torch in their possession. They have to find their way out of the pyramid in order to regain their memories. One ending concludes with the protagonist finding out that they were a retainer for a pharaoah. Another ending is the protagonist remembering that they were a treasure hunter after they successfully escaped past the elite pyramid guards and advanced booby traps with the pharaoh's ultimate treasure sealed away at the top floor of the pyramid. The last ending is where the protagonist finds their own large burial inside the pyramid and realizes that they were the pharaoah of the lost civilization they were buried with. It is up to the player to decide which ending they perceive to be the true ending. 
+## *Setting*
+    Long, long ago in the fantasy land of Zetar, there existed the ancient civilization of Kemet. The Kemet people practiced a polytheistic religion, worshipping the gods of the desert in hopes of receiving their blessings to continue leading their lives in peace. The gods listened to their prayers and were empowered by their offerings, and, in turn, they granted them their boons, allowing the people to thrive without encountering any major problems. That was, until they were met with a deadly plague, the likes of which were beyond the scope of the gods' power to be dealt with. Every last member of the Kemet would fall victim to this plague, including the pharaoh themselves. These poor souls would be laid to rest in their communal tomb—a pyramid, carrying with them feelings of having been betrayed by their gods. Overridden with guilt, the gods took it upon themselves to perform the sacred duty of protecting the Kemet's final resting place as a means of atoning for their failure in protecting their fallen devotees. The pyramid was under the divine protection of the sun god Ra, who made daily journeys through the cosmic underworld to keep Apep (the snake god of darkness and chaos) at bay, getting reborn each day to pass the sun through the sky when the time came. However, with much of his power having been drained and no more followers to rely on, Ra would eventually meet his permanent demise, plunging the world into darkness and leaving the pyramid vulnerable to Apep. Apep infiltrated the pyramid and defeated Anubis, who was stationed at the pyramid to protect the spirits of the dead. Apep, having full control of the pyramid, brought along his snake minions and condemned the spirits inside with a curse, which awakened them and prevented them from passing on. Filled with their centuries of hate towards their former deities, the now restless spirits roam the floors of the pyramid in a rage. Anubis, having been severely weakened in the fight between him and Apep, lays low inside a secret part of the pyramid, clinging onto a sliver of hope that someone will come and defeat the dreaded god of chaos so that he may use the last of his power to help the cursed spirits pass on to the afterlife. Only Ahmose* (the protagonist) was spared of the curse due to being protected by their amulet containing the Eye of Horus, the god of the sky and protector of kings. Ahmose, having forgotten their identity after being reborn, must face the challenges presented to them as they attempt to escape the pyramid and gain the answers to their past. *The name Ahmose was chosen at first due to being a gender neutral name in ancient Egyptian society commonly used by both pharaohs and queens. Its meaning, "birth/child of the moon," is a symbolic coincidence with how Ahmose survives with the Eye of Horus (which is his left eye, which is the moon) and brings light to a world of darkness in the place of the sun (due to Ra's death), both literally with their torch and figuratively by defeating Apep and saving the cursed spirits. The setting is inspired from the ancient Egyptian civilization and their mythology.  
+## *Characters*
+    Ahmose/player-chosen name - The protagonist. Their true identity is a mystery. They must escape the pyramid to find a more suitable place to stay. In doing so, they recover fragments of their lost memories.
+## *Rules*
+    Player has a set number of lives to start with.
+    Player must find all keys hidden around the level in order to interact with the exit of the level.
+    If the player reaches 0 lives, they lose the game.
+    If the player reaches the exit on the floor, they win the game.
 
-> [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors_and_Styles) for styling strings in the terminal
+## *Enemies*
+    There are ghosts that the player must avoid getting hit by. Each hit deducts 1 life from the player's lives.
+## *Mechanics*
+    Player can find lives hidden throughout the floor.
+        These are in the form of hearts.
+    Player can find torches that when lit, scares the ghosts, rendering them invisible and noninteractive.
+        Torches last x amount of distance traveled.
+## *Levels*
+    The base level of the pyramid is where the player must escape from to win the game.
+## *Art*
+    Asset
+    File name: All files under the "HauntedHavoc/assets/anims/extras" folder
+    What is it: Unused sprites for the player character when they were to be facing in a diagonal/intercardinal direction (such as up-left, up-right, down-left, and down-right)
+    Where it comes from: The sprite sheet created for the player character (which was created in Aseprite)
+    Who created it: Ashley Yu
+    
+    Asset
+    File name: All files under the "HauntedHavoc/assets/anims/ghost" folder
+    What is it: Sprites for the ghosts
+    Where it comes from: The sprite sheet created for the ghosts (which was created in Aseprite)
+    Who created it: Ashley Yu
 
-You probably want the higher-level [chalk](https://github.com/chalk/chalk) module for styling your strings.
+    Asset
+    File name: All files under the "HauntedHavoc/assets/anims/player" folder
+    What is it: Sprites for the player character
+    Where it comes from: The sprite sheet created for the player character (which was created in Aseprite)
+    Who created it: Ashley Yu
 
-<img src="screenshot.svg" width="900">
+    Asset
+    File name: ghost sprite sheet.png
+    What is it: A sprite sheet for the ghosts
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-## Install
+    Asset
+    File name: empty torch brazier.png
+    What is it: A sprite for an empty torch brazier
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-```
-$ npm install ansi-styles
-```
+    Asset
+    File name: empty torch sconce.png
+    What is it: A sprite for an empty torch sconce
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-## Usage
+    Asset
+    File name: gate.png
+    What is it: A sprite for the gate
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-```js
-const style = require('ansi-styles');
+    Asset
+    File name: ghost animation.gif
+    What is it: An animated GIF file to demonstrate the keyframe animation of the ghost sprite sheet
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-console.log(`${style.green.open}Hello world!${style.green.close}`);
+    Asset
+    File name: heart.png
+    What is it: A sprite for player life pickups
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
+    Asset
+    File name: heartempty.png
+    What is it: A sprite for empty slots on the UI display for the player's lives
+    Where it comes from: Dungeon Tileset II on itch.io
+    Who created it: 0x72
 
-// Color conversion between 16/256/truecolor
-// NOTE: If conversion goes to 16 colors or 256 colors, the original color
-//       may be degraded to fit that color palette. This means terminals
-//       that do not support 16 million colors will best-match the
-//       original color.
-console.log(style.bgColor.ansi.hsl(120, 80, 72) + 'Hello world!' + style.bgColor.close);
-console.log(style.color.ansi256.rgb(199, 20, 250) + 'Hello world!' + style.color.close);
-console.log(style.color.ansi16m.hex('#abcdef') + 'Hello world!' + style.color.close);
-```
+    Asset
+    File name: heartfull.png
+    What is it: A sprite for full slots on the UI display for the player's lives
+    Where it comes from: Dungeon Tileset II on itch.io
+    Who created it: 0x72
 
-## API
+    Asset
+    File name: key.png
+    What is it: A sprite for key pickups
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-Each style has an `open` and `close` property.
+    Asset
+    File name: player animation.gif
+    What is it: An animated GIF file to demonstrate the keyframe animation of the ghost sprite sheet
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-## Styles
+    Asset
+    File name: player sprite sheet.png
+    What is it: A sprite sheet for the player character
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-### Modifiers
+    Asset
+    File name: tiles.png
+    What is it: A sprite sheet for the tiles
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-- `reset`
-- `bold`
-- `dim`
-- `italic` *(Not widely supported)*
-- `underline`
-- `inverse`
-- `hidden`
-- `strikethrough` *(Not widely supported)*
+    Asset
+    File name: torch brazier.png
+    What is it: A sprite for a lit torch brazier
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-### Colors
+    Asset
+    File name: torch sconce.png
+    What is it: A sprite for a lit torch sconce
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
 
-- `black`
-- `red`
-- `green`
-- `yellow`
-- `blue`
-- `magenta`
-- `cyan`
-- `white`
-- `blackBright` (alias: `gray`, `grey`)
-- `redBright`
-- `greenBright`
-- `yellowBright`
-- `blueBright`
-- `magentaBright`
-- `cyanBright`
-- `whiteBright`
+    Asset
+    File name: ui.png
+    What is it: An unused sprite for the UI
+    Where it comes from: Created by Ashley Yu in Aseprite
+    Who created it: Ashley Yu
+## *Music*
+    Asset
+    File name: bgm.wav
+    What is it: Background music 
+    Where it comes from: Downloaded from https://www.pond5.com/
+    Who created it: Lmz34521
 
-### Background colors
+    Asset
+    File name: damage.mp3
+    What is it: Sound effect for when the player takes damage
+    Where it comes from: Downloaded from https://pixabay.com/
+    Who created it: Pixabay
 
-- `bgBlack`
-- `bgRed`
-- `bgGreen`
-- `bgYellow`
-- `bgBlue`
-- `bgMagenta`
-- `bgCyan`
-- `bgWhite`
-- `bgBlackBright` (alias: `bgGray`, `bgGrey`)
-- `bgRedBright`
-- `bgGreenBright`
-- `bgYellowBright`
-- `bgBlueBright`
-- `bgMagentaBright`
-- `bgCyanBright`
-- `bgWhiteBright`
+    Asset
+    File name: gate.mp3
+    What is it: Sound effect for when the player successfully unlocks the gate
+    Where it comes from: Downloaded from https://pixabay.com/
+    Who created it: Pixabay
 
-## Advanced usage
+    Asset
+    File name: keys.mp3
+    What is it: Sound effect for picking up keys
+    Where it comes from: Downloaded from https://pixabay.com/
+    Who created it: Pixabay
 
-By default, you get a map of styles, but the styles are also available as groups. They are non-enumerable so they don't show up unless you access them explicitly. This makes it easier to expose only a subset in a higher-level module.
+    Asset
+    File name: heart.mp3
+    What is it: Sound effect for replenishing character health 
+    Where it comes from: Downloaded from https://pixabay.com/
+    Who created it: Pixabay
 
-- `style.modifier`
-- `style.color`
-- `style.bgColor`
+    Asset
+    File name: lose.mp3
+    What is it: Game over sound effect 
+    Where it comes from: Downloaded from https://pixabay.com/
+    Who created it: Pixabay
 
-###### Example
+    Asset
+    File name: victory.mp3
+    What is it: Game victory sound effect 
+    Where it comes from: Downloaded from https://pixabay.com/
+    Who created it: Pixabay
 
-```js
-console.log(style.color.green.open);
-```
-
-Raw escape codes (i.e. without the CSI escape prefix `\u001B[` and render mode postfix `m`) are available under `style.codes`, which returns a `Map` with the open codes as keys and close codes as values.
-
-###### Example
-
-```js
-console.log(style.codes.get(36));
-//=> 39
-```
-
-## [256 / 16 million (TrueColor) support](https://gist.github.com/XVilka/8346728)
-
-`ansi-styles` uses the [`color-convert`](https://github.com/Qix-/color-convert) package to allow for converting between various colors and ANSI escapes, with support for 256 and 16 million colors.
-
-The following color spaces from `color-convert` are supported:
-
-- `rgb`
-- `hex`
-- `keyword`
-- `hsl`
-- `hsv`
-- `hwb`
-- `ansi`
-- `ansi256`
-
-To use these, call the associated conversion function with the intended output, for example:
-
-```js
-style.color.ansi.rgb(100, 200, 15); // RGB to 16 color ansi foreground code
-style.bgColor.ansi.rgb(100, 200, 15); // RGB to 16 color ansi background code
-
-style.color.ansi256.hsl(120, 100, 60); // HSL to 256 color ansi foreground code
-style.bgColor.ansi256.hsl(120, 100, 60); // HSL to 256 color ansi foreground code
-
-style.color.ansi16m.hex('#C0FFEE'); // Hex (RGB) to 16 million color foreground code
-style.bgColor.ansi16m.hex('#C0FFEE'); // Hex (RGB) to 16 million color background code
-```
-
-## Related
-
-- [ansi-escapes](https://github.com/sindresorhus/ansi-escapes) - ANSI escape codes for manipulating the terminal
-
-## Maintainers
-
-- [Sindre Sorhus](https://github.com/sindresorhus)
-- [Josh Junon](https://github.com/qix-)
-
-## For enterprise
-
-Available as part of the Tidelift Subscription.
-
-The maintainers of `ansi-styles` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. [Learn more.](https://tidelift.com/subscription/pkg/npm-ansi-styles?utm_source=npm-ansi-styles&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
+    Asset
+    File name: torch.mp3
+    What is it: Sound effect for picking up torches
+    Where it comes from: Downloaded from  https://www.pond5.com/
+    Who created it: JABMEISTER 
+## *Tools*
+    Some of the tools that we used...
+    - Phaser game engine
+    - Aseprite pixel art tool
+    - Free Texture Packer (http://free-tex-packer.com)
+    - Tiled (https://www.mapeditor.org)
+## *Challenges*
+    Some challenges we had to overcome...
+    - Implementing basic game features and mechanics
+      > Player movement (Derrick Hood)
+      > Ghost collision (Derrick Hood)
+      > Torch mechanics (Derrick Hood)
+      > Win/lose screens (Derrick Hood)
+      > UI (Thanya Rodriguez)
+      > Wall collision (Calvin Wong)
+      > Level design (Calvin Wong)
+      > Implementing sprite and sound/music files into the game (Calvin Wong)
+    - Maintaining the top-down perspective look for the game's sprites (Ashley Yu)
+    - Sourcing high-quality sound/music files that would suit the game (Jacquelyn Anderson)
+## *Credits*
+    A big “thank you” to…
+    - Ansimuz on YouTube for their Phaser tutorial playlist.
+    - MortMort, AdamCYounis, and Brandon James Greer on YouTube for their educational pixel art tutorial videos.
+    - The SLYNYRD blog for inspiration on making the tile sprites.
+    - Mnjackson5 on dinopixel for inspiration on making the key sprite.
