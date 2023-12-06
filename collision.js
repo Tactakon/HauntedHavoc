@@ -65,7 +65,7 @@ function playerCollidesWithGhost(player, ghosts) {
                                     playerDeathX,
                                     playerDeathY,
                                     'YOU LOSE',
-                                    { fontSize: '100px', fill: '#fff' }
+                                    { fontSize: '75px', fill: '#fff' }
                                     );
                                     loseMessage.setOrigin(0.5);
                                     const LoseSound = this.sound.add('LoseSound');
@@ -136,7 +136,7 @@ function playerCollidesWithGate(player,gate){
                         playerEscapeX,
                         playerEscapeY,
                         'YOU WIN',
-                        { fontSize: '100px', fill: '#fff' }
+                        { fontSize: '75px', fill: '#fff' }
                         );
                         loseMessage.setOrigin(0.5);
                         const WinSound = this.sound.add('WinSound');
